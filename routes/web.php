@@ -27,6 +27,6 @@ Route::get('/', function () {
 Route::view("/imageconverter","imageconverter");
 //Route::post('imageconverter',[converter::class,'convertmedia']);
 
-
+Route::view('upload','upload');
 Route::post('imageconverter1',[converter::class,'changeformat']);
 
