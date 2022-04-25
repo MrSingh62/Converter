@@ -26,8 +26,10 @@ body {
 .breadcrumb li:before{content:"/";position: absolute;right:0}
 .breadcrumb li.active:before{display:none}
 
-#formsec{width: 100%;    float: left;    padding: 4rem;}
+#formsec{width: 100%;    float: left;    padding: 4rem;text-align:center}
+#formsec #fileupload{margin: 0 auto;float: none;border: 1px solid #2AC48A;padding: 2rem;background: #2AC48A;margin-bottom:1rem;color: #fff;}
+#formsec .col-md-6{margin: 0 auto;float: none}
 
-input{padding: 10px 15px;border:1px solid #eee;/*! width: 300px; */margin-bottom: 1rem;}
+input{padding: 10px 15px;/*! border:1px solid #eee; *//*! width: 300px; */margin-bottom: 1rem;}
 input[type=submit]{width:100px;background:#D0AD5B;cursor: pointer;}
 

@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use Facade\FlareClient\Http\Response;
 use Illuminate\Http\Request;
+
 
 use Intervention\Image\ImageManagerStatic as Image;
 
@@ -28,7 +30,7 @@ class converter extends Controller
         $format=$request->input('format');
         //$filename=$request->file('media');
         $originalImage= $request->file('media');
-       $ext=$originalImage->Extension();
+       //$ext=$originalImage->Extension();
          $newfilename=time().".".$format;
 
 
@@ -36,6 +38,9 @@ class converter extends Controller
         $thumbnailImage->resize(300, 200)->save($newfilename);
 
       // return $thumbnailImage->response();
-       return view('upload');
+       // return view('upload');
+      
+       //return Response::download($thumbnailImage);
+       return response()->download(public_path("$newfilename" ))->deleteFileAfterSend();
     }
 }

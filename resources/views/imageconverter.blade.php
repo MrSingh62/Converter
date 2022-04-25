@@ -6,7 +6,7 @@
 <div id="formsec">
     <form action="imageconverter1" method="post" enctype="multipart/form-data">
         @csrf
-            <div class="col-md-6">
+            <div class="col-md-6" id="fileupload">
                 <input type="file" name="media">
             </div>
             <div class="clear"></div>
