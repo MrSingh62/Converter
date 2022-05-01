@@ -26,10 +26,52 @@ body {
 .breadcrumb li:before{content:"/";position: absolute;right:0}
 .breadcrumb li.active:before{display:none}
 
+#titlesection{background: linear-gradient(90deg,#0d6d16,#30c1c8 50%,#F86B04);;padding: 3rem 0;width: 100%;float: left;text-align: center;}
+#titlesection h1{color:#fff;font-size: 3rem;font-weight: 400;}
+
+#modules{width: 100%;float: left;padding: 3rem 0}
+.mrow{display: grid;grid-template-columns: repeat(auto-fit,minmax(250px,1fr));grid-gap: 2rem;}
+.mbox{border: 1px solid #eee;box-shadow: 5px 10px 15px rgb(0,0,0,0.3);padding: 1rem;}
+.mbox img{width: 64px;}
+.mbox p{font-size: 1.3rem;letter-spacing: 1px;}
+
+#main{padding:3rem 0}
+
+.inputarea textarea{width: 100%}
+.inputarea #formats{width: 100%;padding: 5px;display: grid;grid-template-columns: repeat(auto-fit,minmax(120px,1fr));grid-gap:5px}
+
+
 #formsec{width: 100%;    float: left;    padding: 4rem;text-align:center}
 #formsec #fileupload{margin: 0 auto;float: none;border: 1px solid #2AC48A;padding: 2rem;background: #2AC48A;margin-bottom:1rem;color: #fff;}
 #formsec .col-md-6{margin: 0 auto;float: none}
+input[type=file]{background-color:#446655;}
+input[type=file]::file-selector-button {
+  border: 2px solid #6c5ce7;
+  padding: .2em .4em;
+  border-radius: .2em;
+  background-color: #fff;
+  transition: 1s;}
+#formats{display: inline-flex;
+background: #fff;
+width: 400px;
+align-items: center;
+justify-content: space-evenly;
+border-radius: 5px;
+padding: 20px 15px;
+box-shadow: 5px 5px 30px rgba(0,0,0,0.2);}
+#formats input{background: #fff;
+height: 100%;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+margin: 0 10px;
+border-radius: 5px;
+cursor: pointer;
+padding: 0 10px;
+border: 2px solid lightgrey;
+transition: all 0.3s ease;}
 
 input{padding: 10px 15px;/*! border:1px solid #eee; *//*! width: 300px; */margin-bottom: 1rem;}
-input[type=submit]{width:100px;background:#D0AD5B;cursor: pointer;}
+input[type=submit]{cursor: pointer;letter-spacing: 0;color: #fff;background-color: #4d90fe;min-width: 200px;padding: 10px 24px 14px;text-shadow: none;border: none;text-decoration: none;border-radius: 4px;font-size: 24px;text-transform: capitalize;margin:1rem 0}
 

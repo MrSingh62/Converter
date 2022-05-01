@@ -24,9 +24,9 @@ Route::get('/', function () {
 
 // });
 
-Route::view("/imageconverter","imageconverter");
-//Route::post('imageconverter',[converter::class,'convertmedia']);
-
-Route::view('upload','upload');
+Route::view("imageconverter","imageconverter");
 Route::post('imageconverter1',[converter::class,'changeformat']);
+
+Route::view('texteditor','texteditor');
+Route::post('texteditor',[converter::class,'stringfunc']);
 
