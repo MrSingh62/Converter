@@ -24,9 +24,10 @@ Route::get('/', function () {
 
 // });
 
+Route::view('texteditor','texteditor');
+Route::post('texteditor',[converter::class,'stringfunc']);
+
 Route::view("imageconverter","imageconverter");
 Route::post('imageconverter1',[converter::class,'changeformat']);
 
-Route::view('texteditor','texteditor');
-Route::post('texteditor',[converter::class,'stringfunc']);
 

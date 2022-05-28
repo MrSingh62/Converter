@@ -24,8 +24,9 @@
             <div class="nav">
                 <ul>
                     <li><a href="/">Home</a></li>
-                    <li><a href="imageconverter">Image Converter</a></li>
                     <li><a href="texteditor">Text Editor</a></li>
+                    <li><a href="imageconverter">Image Converter</a></li>                    
+                    <li><a href="imageeffects">Image Editor</a></li>
                 </ul>
             </div>
             </div>
